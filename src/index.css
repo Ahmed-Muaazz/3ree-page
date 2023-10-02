@@ -1,0 +1,263 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #222;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #0e0e0e;
+  --gray: #a0a0a0;
+  --white: #ffffff;
+  /* --primary_color:#AF8b6F; */
+  /* --primary_color:#03e1c0; */
+  --primary_color: #fea022;
+  --secondary_color: #722ed1;
+  --light_gray: #f6f6f6;
+  --box_shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --border_radius: 50px;
+  --border_color: #a0a0a0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+ul {
+  /* list-style:circle; */
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+p {
+  font-size: 1.0625rem;
+  font-weight: 300;
+  line-height: 1.6;
+  text-transform: none;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 600;
+  line-height: 8rem;
+  text-transform: none;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  text-transform: none;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: none;
+}
+h4 {
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-transform: none;
+}
+h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+select {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-bottom: 1px solid var(--border_color);
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-bottom: 1px solid var(--border_color);
+  padding: 0.7rem 1rem;
+}
+input:focus {
+  border: 1px solid var(--border_color);
+  border-radius: 4px;
+}
+input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 8px;
+}
+textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-bottom: 1px solid var(--border_color);
+
+  padding: 0.7rem;
+}
+textarea:focus {
+  border: 1px solid var(--border_color);
+  border-radius: 4px;
+}
+button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.btn {
+  padding: 0.4rem 2rem;
+  width: fit-content;
+  background-color: var(--primary_color);
+  color: var(--black);
+  border: 2px solid var(--primary_color);
+  outline: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  border-radius: var(--border_radius);
+}
+
+.icon_react {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.secondary_btn {
+  padding: 0.4rem 2rem;
+  width: fit-content;
+  color: var(--white) !important;
+  background-color: var(--black);
+  border: 2px solid var(--black);
+  outline: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  border-radius: var(--border_radius);
+}
+
+.borderless {
+  border: none !important;
+}
+
+.blur_bg {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.site_padding {
+  padding: 5rem;
+}
+.flex_row_center {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.flex_row {
+  display: flex;
+}
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.back_button {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  h1 {
+    font-size: 4.5rem;
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 2.65rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-transform: none;
+  }
+  h5 {
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+    padding: 0.82rem 2.1rem;
+  }
+  .secondary_btn {
+    font-size: 0.875rem;
+    padding: 0.82rem 2.1rem;
+  }
+
+  .site_padding {
+    padding: 4rem 2rem 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .back_button {
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    z-index: 2;
+    color: var(var(--primary_color));
+  }
+}
